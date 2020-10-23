@@ -43,7 +43,7 @@ function decode(expr) {
     decoded = decoded.map(el => 
         el.replace(/11/g, '-')
     .replace(/10/g, '.')
-    .replace(/\*+/g, '')
+    // .replace(/\*+/g, '')
     .replace(/0/g, ''));
 console.log(decoded);
 return decoded.map(letter => MORSE_TABLE[letter]).join('');
